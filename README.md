@@ -45,27 +45,32 @@ API ini menyediakan fitur untuk menampilkan daftar buku, detail buku, menambahka
         'year' => 2022
     ],
 ]
+```
 
 
-# Cara Instalasi & Menjalankan Project
+
+## Cara Instalasi & Menjalankan Project
 
 1. **Clone repository**
    ```bash
    git clone https://github.com/LRMNTRIX03/Simple-Library-Books-Laravel.git
    cd Simple-Library-Books-Laravel
-
-
+    ```
+   
 2. **Instal dependencies**
    ```bash
    composer install
+    ```
    
 3. **Salin file.env**
    ```bash
    cp .env.example .env
+    ```
 
 5. **Generate Application Key**
    ```bash
    php artisan key:generate
+    ```
 
 6. **Konfigurasi Databse**
    Sesuaikan dengan database anda:
@@ -77,17 +82,20 @@ API ini menyediakan fitur untuk menampilkan daftar buku, detail buku, menambahka
     DB_DATABASE=nama_database
     DB_USERNAME=root
     DB_PASSWORD=
+     ```
 
 8. **Migrasi Database dan isi tabel books dengan Seeder yang ada**
    ```bash
     php artisan migrate --seed
+     ```
 
 10. **Jalankan Server**
    ```bash
     php artisan serve
+ ```
 
 11. **Buka Server anda**
-   ```bash
-   http://127.0.0.1:8000
+    ```bash
+    http://127.0.0.1:8000
 
-   Proses Api bisa diuji melalui Aplikasi Postman
+   **Proses Api bisa diuji melalui Aplikasi Postman**
