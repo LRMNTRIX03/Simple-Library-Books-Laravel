@@ -78,8 +78,8 @@ Sebelum menjalankan project, pastikan sistem Anda sudah memenuhi syarat berikut:
    php artisan key:generate
     ```
 
-6. **Konfigurasi Databse**
-   Sesuaikan dengan database anda:
+6. **Konfigurasi Database**
+   Sesuaikan dengan database anda di file .env:
    
     ```bash
     DB_CONNECTION=mysql
