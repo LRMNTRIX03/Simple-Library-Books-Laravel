@@ -105,3 +105,67 @@ Sebelum menjalankan project, pastikan sistem Anda sudah memenuhi syarat berikut:
     http://127.0.0.1:8000
 
    **Proses Api bisa diuji melalui Aplikasi Postman**
+
+   ## Contoh Penerapan Endpoint
+   1. **http://127.0.0.1:8000/api/books** 
+   Response :
+   ```php
+   {
+  "data": [
+    {
+      "id": 1,
+      "title": "Pemrograman Web dengan PHP",
+      "author": "Andi Prasetyo",
+      "year": 2021,
+      "created_at": "2025-09-29T09:10:52.000000Z",
+      "updated_at": "2025-09-29T09:10:52.000000Z"
+    },
+    {
+      "id": 2,
+      "title": "Dasar-dasar Framework Laravel",
+      "author": "Budi Santoso",
+      "year": 2023,
+      "created_at": "2025-09-29T09:10:52.000000Z",
+      "updated_at": "2025-09-29T09:10:52.000000Z"
+    },
+    {
+      "id": 3,
+      "title": "Algoritma dan Struktur Data",
+      "author": "Citra Handayani",
+      "year": 2020,
+      "created_at": "2025-09-29T09:10:52.000000Z",
+      "updated_at": "2025-09-29T09:10:52.000000Z"
+    },
+    {
+      "id": 4,
+      "title": "Basis Data Relasional",
+      "author": "Dewi Kartika",
+      "year": 2019,
+      "created_at": "2025-09-29T09:10:52.000000Z",
+      "updated_at": "2025-09-29T09:10:52.000000Z"
+    },
+    {
+      "id": 5,
+      "title": "Jaringan Komputer dan Keamanan",
+      "author": "Eko Wiratama",
+      "year": 2022,
+      "created_at": "2025-09-29T09:10:52.000000Z",
+      "updated_at": "2025-09-29T09:10:52.000000Z"
+    }
+  ]
+}
+   ```
+   2. **http://127.0.0.1:8000/api/books/1** 
+   ```php
+{
+  "data": {
+    "id": 1,
+    "title": "Pemrograman Web dengan PHP",
+    "author": "Andi Prasetyo",
+    "year": 2021,
+    "created_at": "2025-09-29T09:10:52.000000Z",
+    "updated_at": "2025-09-29T09:10:52.000000Z"
+  }
+}
+   ```
+   **Untuk yang lainnya dapat anda coba melalui aplikasi postman**
