@@ -104,7 +104,8 @@ Sebelum menjalankan project, pastikan sistem Anda sudah memenuhi syarat berikut:
     ```bash
     http://127.0.0.1:8000
 
-   **Proses Api bisa diuji melalui Aplikasi Postman**
+   **Proses Api bisa diuji melalui Aplikasi Postman atau menggunakan Project ini
+   https://github.com/LRMNTRIX03/Simple-Library-Books-FrontEnd**
 
    ## Contoh Penerapan Endpoint
    1. **http://127.0.0.1:8000/api/books** 
