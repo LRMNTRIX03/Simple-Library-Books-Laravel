@@ -85,7 +85,7 @@ Sebelum menjalankan project, pastikan sistem Anda sudah memenuhi syarat berikut:
     DB_CONNECTION=mysql
     DB_HOST=127.0.0.1
     DB_PORT=3306
-    DB_DATABASE=nama_database
+    DB_DATABASE=nama_database #db_xfit_digital
     DB_USERNAME=root
     DB_PASSWORD=
      ```
