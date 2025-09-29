@@ -4,6 +4,12 @@ Proyek ini adalah RESTful API sederhana berbasis **Laravel** untuk mengelola dat
 API ini menyediakan fitur untuk menampilkan daftar buku, detail buku, menambahkan buku baru, memperbarui, serta menghapus buku.
 
 ---
+## Syarat Menjalankan Project ini
+
+Sebelum menjalankan project, pastikan sistem Anda sudah memenuhi syarat berikut:
+1. **PHP >= 8.2** dengan ekstensi **zip** aktif  
+2. **Composer** (versi terbaru)  
+3. **Database MySQL** atau **MariaDB**
 
 ## Fitur API
 
