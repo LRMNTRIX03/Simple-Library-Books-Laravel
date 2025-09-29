@@ -3,7 +3,9 @@
 Proyek ini adalah RESTful API sederhana berbasis **Laravel** untuk mengelola data buku.  
 API ini menyediakan fitur untuk menampilkan daftar buku, detail buku, menambahkan buku baru, memperbarui, serta menghapus buku.
 
-# Fitur API
+---
+
+## Fitur API
 
 - **GET** `/api/books` → Menampilkan semua buku
 - **GET** `/api/books/{id}` → Menampilkan detail buku berdasarkan ID
@@ -11,8 +13,13 @@ API ini menyediakan fitur untuk menampilkan daftar buku, detail buku, menambahka
 - **PUT** `/api/books/{id}` → Memperbarui data buku
 - **DELETE** `/api/books/{id}` → Menghapus buku
 
-# Sudah Terdapat data Dummy yang berada pada BookSeeder
- [
+---
+
+## Dummy Data (BookSeeder)
+
+```php
+[
+    [
         'title' => 'Pemrograman Web dengan PHP',
         'author' => 'Andi Prasetyo',
         'year' => 2021
@@ -37,6 +44,7 @@ API ini menyediakan fitur untuk menampilkan daftar buku, detail buku, menambahka
         'author' => 'Eko Wiratama',
         'year' => 2022
     ],
+]
 
 
 # Cara Instalasi & Menjalankan Project
@@ -44,19 +52,25 @@ API ini menyediakan fitur untuk menampilkan daftar buku, detail buku, menambahka
 1. **Clone repository**
    ```bash
    git clone https://github.com/LRMNTRIX03/Simple-Library-Books-Laravel.git
-   cd Simple-Library-Laravel
+   cd Simple-Library-Books-Laravel
+
 
 2. **Instal dependencies**
+   ```bash
    composer install
    
 3. **Salin file.env**
+   ```bash
    cp .env.example .env
 
-4. **Generate Application Key**
+5. **Generate Application Key**
+   ```bash
    php artisan key:generate
 
-5. **Konfigurasi Databse**
+6. **Konfigurasi Databse**
    Sesuaikan dengan database anda:
+   
+    ```bash
     DB_CONNECTION=mysql
     DB_HOST=127.0.0.1
     DB_PORT=3306
@@ -64,11 +78,16 @@ API ini menyediakan fitur untuk menampilkan daftar buku, detail buku, menambahka
     DB_USERNAME=root
     DB_PASSWORD=
 
-6. **Migrasi Database dan isi tabel books dengan Seeder yang ada**
+8. **Migrasi Database dan isi tabel books dengan Seeder yang ada**
+   ```bash
     php artisan migrate --seed
 
-7. **Jalankan Server**
+10. **Jalankan Server**
+   ```bash
     php artisan serve
 
-8. **Buka Server anda**
+11. **Buka Server anda**
+   ```bash
    http://127.0.0.1:8000
+
+   Proses Api bisa diuji melalui Aplikasi Postman
