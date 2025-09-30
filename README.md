@@ -70,7 +70,7 @@ Sebelum menjalankan project, pastikan sistem Anda sudah memenuhi syarat berikut:
    
 3. **Salin file.env**
    ```bash
-   cp .env.example .env
+   copy .env.example .env
     ```
 
 5. **Generate Application Key**
