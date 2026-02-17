@@ -1,10 +1,10 @@
 <?php
 
-use Illuminate\Http\Request;
+
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BooksController;
 
-Route::prefix('books')->group(function(){
+Route::prefix('books')->middleware('throttle:books-api')->group(function(){
 Route::get('/', [BooksController::class, 'index'])->name('books.index');
 Route::post('/', [BooksController::class, 'store'])->name('books.store');
 Route::get('/{id}', [BooksController::class, 'show'])->name('books.show');
